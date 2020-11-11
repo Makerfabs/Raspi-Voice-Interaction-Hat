@@ -1,7 +1,7 @@
 import requests
 import base64
-import socket
-import socks
+#import socket
+#import socks
 import json
 
 api_key = "AIzaSyBePoKOzQjLmB2rPJ-d9U-Cb1gDb5ynW5Y"
@@ -53,8 +53,8 @@ def TTS():
     """
     headers = {'content-type': 'application/json'}
 
-    socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 1080)
-    socket.socket = socks.socksocket
+    #socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 1080)
+    #socket.socket = socks.socksocket
     
     r = requests.post(
         'https://texttospeech.googleapis.com/v1/text:synthesize?key='+api_key, data=data, headers=headers)
