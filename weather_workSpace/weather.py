@@ -1,6 +1,6 @@
 import requests
-import socket
-import socks
+#import socket
+#import socks
 import json
 
 address = ["Beijing","Moscow","London","Chicago","Rome","Singapore","Hong Kong","Taiwan","Tokyo","Seoul","Paris","New York","Washington","Sydney"]
@@ -28,8 +28,8 @@ headers = {
     'x-rapidapi-key': "47313e7efamshc596ab4201dc763p1c4275jsn3cdf6312f886"
     }
 
-socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 1080)
-socket.socket = socks.socksocket
+#socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 1080)
+#socket.socket = socks.socksocket
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
