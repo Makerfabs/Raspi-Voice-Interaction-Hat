@@ -32,7 +32,7 @@ def TTS():
     data_add = f_text_add.read()
     f_text_add.close()
 
-    text = "Hello.The weather in "+data_add+"is"+str(data_wea)+", the highest temperature is "+str(data_text['main']['temp_max'])+"degrees Celsius,the lowest is "+ str(data_text['main']['temp_min'])+"degrees Celsius,humidity is "+ str(data_text['main']['humidity'])+"%,wind speed is "+str(data_text['wind']['speed'])+"4km/h. the broadcast ends. Good mood a day."
+    text = "Hello.The weather in "+data_add+"is"+str(data_wea)+", the highest temperature is "+str(data_text['main']['temp_max'])+"degrees Celsius,the lowest is "+ str(data_text['main']['temp_min'])+"degrees Celsius,humidity is "+ str(data_text['main']['humidity'])+"%,wind speed is "+str(data_text['wind']['speed'])+"km/h. the broadcast ends. Good mood a day."
     data = """
         {
             "input": {
