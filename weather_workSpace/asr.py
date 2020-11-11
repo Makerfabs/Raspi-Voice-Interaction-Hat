@@ -1,7 +1,7 @@
 import requests
 import base64
-import socket
-import socks
+#import socket
+#import socks
 
 api_key = "AIzaSyBePoKOzQjLmB2rPJ-d9U-Cb1gDb5ynW5Y"
 
@@ -44,8 +44,8 @@ def ASR():
     SaveToTxt("./request.txt", data)
     headers = {'content-type': 'application/json'}
         
-    socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 1080)
-    socket.socket = socks.socksocket
+    #socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 1080)
+    #socket.socket = socks.socksocket
     r = requests.post( 
         'https://speech.googleapis.com/v1/speech:recognize?key='+api_key, data=data, headers=headers)
 
